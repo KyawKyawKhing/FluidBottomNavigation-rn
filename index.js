@@ -31,6 +31,22 @@ class TabBar extends Component {
     tintColor: "rgb(76, 83, 221)"
   };
 
+  componentDidMount = () => {
+	const { selectedTab } = this.props
+	this.onChangeTab(selectedTab)
+  }
+
+  onChangeTab = (selectedTab) => {
+	  this.startAnimation(selectedTab);
+	  if (this.state.lastSelectedIndex !== null) {
+		this.endAnimation(this.state.lastSelectedIndex);
+	  }
+	  this.setState({
+		lastSelectedIndex: selectedTab
+	  });
+	  this.props.onPress(selectedTab);
+  }
+
   state = {
     lastSelectedIndex: null
   };
@@ -219,7 +235,8 @@ TabBar.propTypes = {
       icon: PropTypes.number.isRequired
     })
   ),
-  tintColor: PropTypes.string
+  tintColor: PropTypes.string,
+  selectedTab: PropTypes.number,
 };
 
 const styles = {
