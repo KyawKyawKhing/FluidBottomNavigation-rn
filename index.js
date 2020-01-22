@@ -32,8 +32,16 @@ class TabBar extends Component {
   };
 
   componentDidMount = () => {
+	console.log("Props Tab:==>",this.props)
 	const { selectedTab } = this.props
 	this.onChangeTab(selectedTab)
+  }
+
+  componentWillReceiveProps(nextProps){
+	console.log("Props Tab New:==>",nextProps)
+	if(nextProps.navigation && nextProps.navigation.state.index && nextProps.navigation.state.index) {
+		this.onChangeTab(nextProps.navigation.state.index)
+	  }
   }
 
   onChangeTab = (selectedTab) => {
