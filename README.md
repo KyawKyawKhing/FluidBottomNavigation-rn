@@ -1,7 +1,7 @@
-# FluidBottomNavigation for React Native
+# RNBottomNavigation for React Native
 
-[![NpmVersion](https://img.shields.io/npm/v/fluidbottomnavigation-rn.svg?style=flat-square)](https://www.npmjs.com/package/fluidbottomnavigation-rn)
-[![NpmLicense](https://img.shields.io/npm/l/fluidbottomnavigation-rn.svg?style=flat-square)](https://www.npmjs.com/package/fluidbottomnavigation-rn)
+[![NpmVersion](https://img.shields.io/npm/v/fluidbottomnavigation-rn.svg?style=flat-square)](https://www.npmjs.com/package/@logisticinfotech/react-native-bottom-navigation)
+[![NpmLicense](https://img.shields.io/npm/l/fluidbottomnavigation-rn.svg?style=flat-square)](https://www.npmjs.com/package/@logisticinfotech/react-native-bottom-navigation)
 
 The Animated Tab Bar for React Native
 
@@ -16,7 +16,7 @@ To run the example project, clone the repo, and run `npm install` from the Examp
 It is available through [npm](https://npmjs.com). To install just run
 
 ```
-npm i fluidbottomnavigation-rn
+npm i @logisticinfotech/react-native-bottom-navigation
 ```
 
 in your project directory. And then link it's native dependency with
