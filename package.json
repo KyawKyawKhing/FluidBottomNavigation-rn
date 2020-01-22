@@ -1,6 +1,6 @@
 {
   "name": "@logisticinfotech/react-native-bottom-navigation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Animated Tab Bar Component for React Native",
   "main": "index.js",
   "scripts": {
